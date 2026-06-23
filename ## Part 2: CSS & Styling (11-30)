@@ -1,0 +1,84 @@
+### 11. CSS nədir və veb səhifəyə necə tətbiq olunur?
+
+CSS (**Cascading Style Sheets**) veb səhifənin rənglərini, şriftlərini və yerləşimini dizayn etmək üçün istifadə olunur. O, sadə HTML strukturunu daha gözəl və peşəkar görünən hala gətirir. CSS HTML səhifəsinə üç fərqli üsulla tətbiq edilə bilər: daxili stil (inline), `<style>` teqi daxilində yazılan stil (internal) və ayrıca CSS faylı (external). Böyük layihələr üçün ayrıca CSS faylından istifadə etmək daha məqsədəuyğundur.
+
+### 12. CSS Box Model-i izah edin.
+
+CSS Box Model hər bir HTML elementini əhatə edən qutu modelidir. O, dörd hissədən ibarətdir: **content (məzmun)**, **padding (daxili boşluq)**, **border (çərçivə)** və **margin (xarici boşluq)**. Content elementin əsas məzmunudur. Padding məzmun ilə çərçivə arasındakı boşluqdur. Border elementi əhatə edən çərçivədir. Margin isə elementlə digər elementlər arasındakı xarici məsafəni müəyyən edir.
+
+### 13. Margin və Padding arasındakı fərq nədir?
+
+**Padding** elementin daxilində, məzmun ilə çərçivə arasındakı boşluqdur. O, məzmunun ətrafında əlavə sahə yaradır. **Margin** isə elementin xaricində yerləşən boşluqdur və digər elementlərlə məsafə yaradır. Padding elementin daxili ölçüsünə təsir edir, margin isə xarici məsafəni tənzimləyir. Hər ikisi dizaynda düzgün aralıqlar yaratmaq üçün vacibdir.
+
+### 14. CSS Specificity nədir?
+
+CSS Specificity brauzerin hansı stil qaydasının tətbiq ediləcəyini müəyyən edən qaydalar toplusudur. Əgər bir elementə bir neçə fərqli stil tətbiq olunursa, brauzer onların üstünlük səviyyəsini hesablayır. Ən yüksək üstünlüyə malik olan qayda tətbiq olunur. Inline stillər ən yüksək üstünlüyə malikdir. ID selektorları class selektorlarından, class selektorları isə tag selektorlarından daha güclüdür. Bu mexanizm stil toqquşmalarını həll etməyə kömək edir.
+
+### 15. Class selektoru ilə ID selektoru arasındakı fərq nədir?
+
+**Class selektoru** eyni səhifədə bir neçə elementə tətbiq oluna bilər. CSS-də class seçmək üçün nöqtə (`.`) işarəsindən istifadə olunur. **ID selektoru** isə unikal olmalıdır və bir səhifədə yalnız bir elementə aid edilir. CSS-də ID seçmək üçün `#` işarəsindən istifadə olunur. Class təkrar istifadə edilən dizaynlar üçün, ID isə unikal bölmələr üçün daha uyğundur.
+
+### 16. CSS-də pseudo-class nədir?
+
+Pseudo-class elementin xüsusi vəziyyətini təsvir edən açar sözdür. Məsələn, `:hover` istifadəçi siçanı elementin üzərinə gətirdikdə stili dəyişir. `:focus` istifadəçi input sahəsinə klik etdikdə tətbiq olunur. `:nth-child()` isə siyahıdakı müəyyən elementləri seçmək üçün istifadə edilir. Pseudo-class-lar JavaScript istifadə etmədən interaktivlik yaratmağa imkan verir.
+
+### 17. CSS-də pseudo-element nədir?
+
+Pseudo-elementlər HTML elementinin müəyyən hissələrini stil vermək üçün istifadə olunur. Onlar iki nöqtə işarəsi ilə yazılır: `::before`, `::after` və s. Məsələn, `::before` və `::after` məzmundan əvvəl və sonra dekorativ elementlər əlavə etmək üçün istifadə olunur. `::first-letter` isə paraqrafın yalnız ilk hərfini dəyişdirir. Bu elementlər DOM-da real HTML elementi yaratmırlar.
+
+### 18. `position` xüsusiyyətinin məqsədi nədir?
+
+`position` xüsusiyyəti elementin səhifədə necə yerləşəcəyini müəyyən edir. O, elementlərin normal axından çıxarılmasına və fərqli mövqelərdə yerləşdirilməsinə imkan verir. Bu xüsusiyyət üst-üstə düşən dizaynlar, üzən düymələr və xüsusi yerləşdirmələr yaratmaq üçün istifadə olunur. `top`, `bottom`, `left` və `right` xüsusiyyətləri ilə birlikdə işləyir.
+
+### 19. Relative, Absolute, Fixed və Sticky yerləşdirmə arasındakı fərqi izah edin.
+
+* **Relative** – element normal axında qalır, lakin öz mövqeyindən bir qədər hərəkət etdirilə bilər.
+* **Absolute** – element normal axından çıxarılır və ən yaxın yerləşdirilmiş (`position` verilmiş) valideyn elementə görə yerləşdirilir.
+* **Fixed** – element brauzer pəncərəsinə sabitlənir və səhifə sürüşdürüldükdə yerini dəyişmir.
+* **Sticky** – əvvəlcə relative kimi davranır, lakin müəyyən nöqtəyə çatdıqda fixed kimi sabitlənir.
+
+Relative element əvvəlki yerində boş sahə saxlayır, absolute isə saxlamır.
+
+### 20. Flexbox necə işləyir?
+
+Flexbox (**Flexible Box Layout**) elementləri bir sətir və ya sütun daxilində rahat şəkildə yerləşdirmək üçün istifadə olunan layout sistemidir. O, konteyner daxilindəki elementlərin ölçüsünü və aralarındakı boşluğu avtomatik hesablayır. Flexbox ekran ölçüsü dəyişdikdə belə elementlərin düzgün düzülməsini təmin edir. Bu sistem birölçülü (**one-dimensional**) hesab olunur, çünki yalnız bir istiqamətdə (sətir və ya sütun) işləyir. O, köhnə layout problemlərinin çoxunu həll etmişdir.
+
+### 21. Flex konteynerinin əsas xüsusiyyətləri hansılardır?
+
+Flex konteynerinin əsas xüsusiyyətləri elementlərin Flexbox daxilində necə yerləşəcəyini müəyyən edir. `display: flex` xüsusiyyəti valideyn elementdə Flexbox sistemini aktivləşdirir. `flex-direction` elementlərin sətir və ya sütun şəklində düzüləcəyini müəyyən edir. `justify-content` elementləri əsas ox boyunca hizalayır. `align-items` isə elementlərin köməkçi ox üzrə düzülməsini idarə edir. `flex-wrap` xüsusiyyəti isə yer çatmadıqda elementlərin yeni sətirə keçməsinə imkan verir.
+
+### 22. CSS Grid nədir və onun üstünlükləri nələrdir?
+
+CSS Grid sətirlər və sütunlardan istifadə edən güclü bir səhifə yerləşdirmə sistemidir. O, ikiölçülü (**two-dimensional**) sistemdir, yəni həm üfüqi, həm də şaquli istiqamətdə işləyir. Əsas üstünlüyü mürəkkəb səhifə quruluşlarını asanlıqla yaratmaqdır. Grid xətləri təyin edib elementləri istənilən yerə yerləşdirmək mümkündür. O, köhnə üsullarda istifadə olunan mürəkkəb margin və float-lara olan ehtiyacı azaldır. Xəbər saytları və müasir idarə paneli interfeysləri üçün çox uyğundur.
+
+### 23. Media Queries nədir və niyə istifadə olunur?
+
+Media Queries cihazın xüsusiyyətlərinə əsasən CSS stillərini tətbiq edən filtrlərdir. Onlar ekranın eni, hündürlüyü və ya həlli kimi xüsusiyyətləri yoxlaya bilir. Media Queries telefon, planşet və kompüterlər üçün fərqli görünüşlər yaratmaq məqsədilə istifadə olunur. Məsələn, böyük ekranlarda üç sütunlu görünən səhifə telefonlarda bir sütuna çevrilə bilər. Onlar responsiv veb dizaynın əsas texnologiyalarından biridir.
+
+### 24. Responsiv veb dizayn nədir?
+
+Responsiv veb dizayn veb səhifələrin bütün cihazlarda yaxşı görünməsini təmin edən yanaşmadır. Bu üsul sayəsində səhifə avtomatik olaraq telefon, planşet və kompüter ekranlarına uyğunlaşır. Bunun üçün elastik şəbəkələr (flexible grids), elastik şəkillər və media queries istifadə olunur. Bu, istifadəçilərə ekran ölçüsündən asılı olmayaraq yaxşı təcrübə təqdim edir. Beləliklə, ayrıca mobil və masaüstü sayt yaratmağa ehtiyac qalmır.
+
+### 25. `display: none` və `visibility: hidden` arasındakı fərq nədir?
+
+`display: none` elementi tamamilə səhifədən silir və həmin element heç bir yer tutmur. Brauzer həmin elementin mövcud olmadığını qəbul edir. `visibility: hidden` isə elementi yalnız görünməz edir, lakin onun səhifədə tutduğu yer qalır. Menyunu tam gizlətmək üçün `display: none`, yerləşməni qorumaq üçün isə `visibility: hidden` istifadə olunur.
+
+### 26. CSS Transitions-un məqsədi nədir?
+
+CSS Transitions stil xüsusiyyətlərinin müəyyən müddət ərzində hamar şəkildə dəyişməsinə imkan verir. Məsələn, rəngin dərhal dəyişməsi əvəzinə tədricən dəyişməsi təmin edilə bilər. Bu, istifadəçi ilə qarşılıqlı əlaqə zamanı yumşaq animasiya effekti yaradır. Keçidlər düymələrin üzərinə gələndə və digər sadə effektlərdə geniş istifadə olunur. Transition üçün xüsusiyyət adı, müddət və zaman funksiyası müəyyən edilməlidir.
+
+### 27. CSS Animations-un məqsədi nədir?
+
+CSS Animations JavaScript istifadə etmədən mürəkkəb animasiyalar yaratmağa imkan verir. Onlar `@keyframes` istifadə edərək elementlərin bir vəziyyətdən digərinə keçməsini təmin edir. Elementlər fırlana, tullanaraq hərəkət edə və ya yavaş-yavaş yox ola bilər. Transition-dan fərqli olaraq animasiyalar avtomatik başlaya və sonsuz təkrarlana bilər. Onlar istifadəçinin diqqətini cəlb etmək və saytı daha canlı göstərmək üçün istifadə olunur.
+
+### 28. `z-index` xüsusiyyətini izah edin.
+
+`z-index` üst-üstə düşən elementlərin hansı sırada görünəcəyini müəyyən edir. Bu xüsusiyyət yalnız `position` verilmiş elementlərdə işləyir. Daha böyük `z-index` dəyərinə malik element digərlərinin üstündə görünür. Məsələn, açılan pəncərələr (modal pəncərələr) adətən yüksək `z-index` dəyərinə malik olur. Mənfi dəyərlərdən istifadə etməklə elementi arxa plana göndərmək də mümkündür.
+
+### 29. Bootstrap nədir və niyə istifadə olunur?
+
+Bootstrap sürətli front-end inkişafı üçün yaradılmış məşhur açıq mənbəli CSS framework-udur. O, düymələr, naviqasiya panelləri, modal pəncərələr və grid sistemləri kimi hazır komponentlər təqdim edir. Proqramçılar sıfırdan CSS yazmaq əvəzinə Bootstrap-dan istifadə etməklə vaxta qənaət edirlər. Bootstrap həmçinin saytların avtomatik olaraq responsiv olmasını təmin edir. Bu framework müxtəlif brauzerlərdə və cihazlarda vahid görünüş yaradır.
+
+### 30. Veb inkişafında əlçatanlıq (Accessibility) nədir?
+
+Accessibility veb saytların hər kəs tərəfindən rahat istifadə oluna bilməsini təmin etmək deməkdir. Buraya görmə, eşitmə və fiziki məhdudiyyətləri olan insanlar da daxildir. Bunun üçün semantik HTML teqlərindən istifadə olunur və şəkillərə mətn təsvirləri (`alt` atributu) əlavə edilir. Yaxşı accessibility ekran oxuyucularının məzmunu düzgün oxumasına imkan verir. Həmçinin sayt yalnız klaviatura ilə də idarə oluna bilməlidir. Accessibility texnologiyanın bütün insanlar üçün əlçatan olmasını təmin edən vacib bir prinsipdir.
