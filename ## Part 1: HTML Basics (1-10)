@@ -1,0 +1,39 @@
+1.	What is the purpose of HTML in web development? 
+Veb inkişafında HTML-in məqsədi nədir?
+HTML (HyperText Markup Language) internetdəki hər bir veb səhifənin əsas strukturunu təşkil edir. O, başlıqlar, paraqraflar və digər elementlərdən istifadə edərək səhifənin quruluşunu müəyyən edir. HTML olmadan veb sayt mətn və ya struktur göstərə bilməz. Brauzerlər HTML fayllarını oxuyaraq məzmunu istifadəçilərə düzgün şəkildə göstərirlər. HTML bütün veb inkişafının təməlidir.
+
+2.	Explain the difference between semantic and non-semantic HTML tags.
+Semantik və qeyri-semantik HTML teqləri arasındakı fərqi izah edin.
+Semantik teqlər həm brauzer, həm də proqramçı üçün aydın məna ifadə edir. Məsələn, <header> və <footer> teqləri daxilində hansı məzmunun olduğunu göstərir. Qeyri-semantik teqlər isə məzmun haqqında məlumat vermir. <div> və <span> kimi elementlər yalnız elementləri qruplaşdırmaq üçün istifadə olunur. Onlar əsasən dizayn və yerləşdirmə məqsədi daşıyır. Semantik teqlərdən istifadə etmək axtarış sistemləri üçün də faydalıdır.
+
+ 3.	What is the Document Object Model (DOM)?
+Sənəd Obyekt Modeli (DOM) nədir?
+DOM (Document Object Model) brauzer tərəfindən veb səhifə yüklənərkən yaradılan ağacvari strukturdur. O, HTML sənədini dəyişdirilə bilən obyektlər şəklində təqdim edir. DOM HTML kodunu JavaScript ilə əlaqələndirərək dinamik səhifələrin yaradılmasına imkan verir. JavaScript DOM vasitəsilə elementləri əlavə, silə və ya dəyişə bilər. DOM veb səhifə məzmunu ilə skript arasında körpü rolunu oynayır.
+
+4.	What is the difference between <div> and <span> elements?
+<div> və <span> elementləri arasındakı fərq nədir?
+<div> blok səviyyəli elementdir və səhifə quruluşu yaratmaq üçün istifadə olunur. O, həmişə yeni sətirdən başlayır və tam eni tutur. <span> isə sətirdaxili (inline) elementdir və mətnin kiçik hissələri üçün istifadə edilir. O, yeni sətirdən başlamır və yalnız lazım olan qədər yer tutur. Böyük bölmələr üçün <div>, mətn daxilində müəyyən sözlər üçün isə <span> istifadə edilir. Hər ikisi qeyri-semantik elementlərdir.
+
+5.	Explain the purpose of the <form> element.
+<form> elementinin məqsədi nədir?
+<form> elementi istifadəçidən məlumat toplamaq üçün istifadə olunur. O, mətn qutuları, seçim xanaları və radio düymələri kimi interaktiv idarəetmə elementlərini özündə saxlayır. İstifadəçi məlumat daxil etdikdə, forma həmin məlumatı serverə göndərə bilər. Bu element istifadəçi interfeysini verilənlər bazası ilə əlaqələndirir. Adətən action və method atributları ilə birlikdə işləyir. İstifadəçi girişləri, qeydiyyat və əlaqə səhifələri üçün vacibdir.
+
+6.	What are HTML attributes? Give examples.
+HTML atributları nədir? Nümunələr göstərin.
+HTML atributları element haqqında əlavə məlumat verir. Onlar həmişə elementin açılış teqinin daxilində yerləşir. Atributlar adətən ad və dəyər cütlərindən ibarət olur. Məsələn, <a> teqindəki href atributu keçidin ünvanını göstərir. <img> teqindəki src atributu isə şəkilin mənbəyini göstərir. Atributlar elementlərin davranışını və görünüşünü dəyişdirməyə kömək edir.
+
+7.	Explain the difference between absolute and relative URLs.
+Mütləq (absolute) və nisbi (relative) URL-lər arasındakı fərqi izah edin.
+Mütləq URL faylın və ya saytın tam internet ünvanını ehtiva edir. Buraya https:// protokolu və domen adı daxildir. Nisbi URL isə eyni layihə daxilindəki fayl yolunu göstərir və domen adını ehtiva etmir. Mütləq URL-lər xarici saytlara keçid vermək üçün, nisbi URL-lər isə layihə daxilində səhifələri bir-birinə bağlamaq üçün istifadə olunur.
+
+8.	What is the purpose of the <meta> tag?
+<meta> teqinin məqsədi nədir?
+<meta> teqi veb səhifə haqqında metadata adlanan məlumatları saxlayır. Bu məlumatlar <head> hissəsində yerləşir və istifadəçilərə görünmür. Onlar axtarış sistemlərinə səhifə haqqında məlumat verir, simvol kodlaşdırmasını təyin edir və müəllif məlumatlarını göstərə bilər. Həmçinin səhifənin mobil cihazlarda uyğun görünməsi üçün istifadə olunur. SEO üçün çox vacibdir.
+
+9.	What are HTML5 semantic elements and why are they important?
+HTML5 semantik elementləri nədir və niyə vacibdir?
+HTML5 semantik elementləri həm insanlar, həm də kompüterlər üçün mənası aydın olan teqlərdir. Məsələn: <nav>, <section>, <article>, <aside>. Bu elementlər kodun oxunmasını asanlaşdırır, ekran oxuyucularının işini yaxşılaşdırır və axtarış sistemlərinin məzmunu daha yaxşı indeksləməsinə kömək edir. Onlar hər yerdə <div> istifadə etmə üsulunu əvəz etmişdir.
+
+10.	Explain the difference between GET and POST methods.
+GET və POST metodları arasındakı fərqi izah edin.
+GET metodu serverdən məlumat almaq üçün istifadə olunur. Göndərilən məlumat URL-də görünür, buna görə məxfi məlumatlar üçün təhlükəsiz hesab edilmir. POST metodu isə məlumatı serverə göndərmək və verilənlər bazasını yeniləmək üçün istifadə olunur. Bu zaman məlumat URL-də görünmür, sorğunun daxilində göndərilir. Buna görə POST həssas məlumatlar üçün daha təhlükəsizdir.
