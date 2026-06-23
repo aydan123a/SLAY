@@ -1,0 +1,41 @@
+63. API nədir?
+
+API (Application Programming Interface) müxtəlif proqramların bir-biri ilə əlaqə qurmasına imkan verən qaydalar toplusudur. O, iki fərqli proqram arasında körpü rolunu oynayır. Məsələn, bir tətbiq Google Xəritələrini göstərmək üçün Google API-sindən istifadə edə bilər. API sorğuların və cavabların hansı formatda göndəriləcəyini müəyyən edir. Bu, proqramçılara hər şeyi sıfırdan yazmadan xarici xidmətlərdən istifadə etməyə imkan verir. API-lər frontend və backend sistemlərini təhlükəsiz şəkildə birləşdirir.
+
+64. Fetch API nədir?
+
+Fetch API JavaScript-də şəbəkə sorğuları göndərmək üçün istifadə olunan müasir daxili vasitədir. O, proqramçılara xarici serverlərdən məlumat almağa imkan verir. Fetch API arxa planda Promise mexanizmindən istifadə edir. Bu texnologiya köhnə XMLHttpRequest sistemini əvəz etmişdir. O, səhifəni yeniləmədən yeni məlumatları yükləməyə imkan verir. Fetch sorğusunun nəticəsi response obyekti şəklində qaytarılır və bu obyekt asanlıqla JSON formatına çevrilə bilər.
+
+65. HTTP status kodlarını izah edin.
+
+HTTP status kodları server tərəfindən brauzerə göndərilən üçrəqəmli kodlardır. Onlar sorğunun uğurlu olub-olmadığını bildirirlər.
+
+Bəzi məşhur status kodları:
+
+200 OK – Sorğu uğurla yerinə yetirildi.
+404 Not Found – Tələb olunan səhifə tapılmadı.
+500 Internal Server Error – Server tərəfində xəta baş verdi.
+403 Forbidden – İcazə yoxdur.
+301 Moved Permanently – Səhifə daimi olaraq başqa ünvana köçürülüb.
+
+Bu kodlar proqramçılara şəbəkə problemlərini aşkar etməkdə kömək edir.
+
+66. Frontend və Backend inkişafı arasındakı fərq nədir?
+
+Frontend inkişafı istifadəçinin gördüyü və qarşılıqlı əlaqədə olduğu hissənin hazırlanması ilə məşğul olur. Bu hissə əsasən HTML, CSS və JavaScript vasitəsilə yaradılır. Backend inkişafı isə server, verilənlər bazası və tətbiqin məntiqi hissəsini əhatə edir. Backend istifadəçi doğrulaması, məlumatların emalı və ödəniş sistemləri kimi prosesləri idarə edir. Frontend məlumat tələb edir, backend isə həmin məlumatı emal edib cavab göndərir. Tam funksional veb tətbiq yaratmaq üçün hər iki hissə birlikdə işləməlidir.
+
+67. Single Page Application (SPA) anlayışını izah edin.
+
+Single Page Application (SPA) yalnız bir HTML sənədi yükləyən müasir veb tətbiq növüdür. İstifadəçi səhifədə hərəkət etdikcə bütün səhifə yenidən yüklənmir. Bunun əvəzinə JavaScript yalnız lazım olan hissələri yeniləyir. Bu yanaşma istifadəçi üçün daha sürətli və axıcı təcrübə yaradır. React, Angular və Vue kimi framework-lər SPA yaratmaq üçün geniş istifadə olunur. SPA-lar yalnız lazım olan məlumatları yüklədiyi üçün server resurslarına da qənaət edir.
+
+68. Modular JavaScript-in əsas üstünlükləri hansılardır?
+
+Modular JavaScript böyük proqramları kiçik və müstəqil modullara bölməyə imkan verir. Hər modul müəyyən bir funksiyanı yerinə yetirir və digər modullardan asılı olmadan işləyə bilir. Modullar arasında kod export və import vasitəsilə paylaşılır. Bu yanaşma kodun təşkilini və idarə olunmasını asanlaşdırır. Həmçinin dəyişən adlarının toqquşmasının qarşısını alır, çünki hər modulun öz scope-u olur. Böyük komandalar üçün modulyar yanaşma eyni vaxtda müxtəlif hissələr üzərində işləməyi asanlaşdırır.
+
+69. Cross-Site Scripting (XSS) nədir?
+
+Cross-Site Scripting (XSS) veb tətbiqlərində rast gəlinən təhlükəli təhlükəsizlik boşluğudur. Bu hücum zamanı hücumçu etibarlı sayta zərərli JavaScript kodu yerləşdirir. Daha sonra həmin kod digər istifadəçilərin brauzerində avtomatik işləyir. XSS hücumları adətən cookie-ləri, giriş məlumatlarını və digər məxfi məlumatları oğurlamaq üçün istifadə olunur. Proqramçılar istifadəçi girişlərini təmizləyərək və xüsusi simvolları çevirməklə XSS hücumlarının qarşısını alırlar. XSS-dən qorunmaq təhlükəsiz veb inkişafının vacib hissəsidir.
+
+70. Veb sayt performansının optimallaşdırılmasının əhəmiyyətini izah edin.
+
+Veb sayt performansının optimallaşdırılması səhifələrin daha sürətli yüklənməsi üçün istifadə olunan üsullar toplusudur. Buraya şəkillərin sıxılması, kod fayllarının kiçildilməsi və brauzer keşləməsindən istifadə daxildir. Sürətli saytlar istifadəçilərə daha yaxşı təcrübə təqdim edir. Araşdırmalar göstərir ki, istifadəçilər 3 saniyədən çox yüklənən saytları tərk etməyə meyllidirlər. Bundan əlavə, sürətli saytlar axtarış sistemlərində daha yüksək sıralanır. Performansın yaxşılaşdırılması həm server xərclərini azaldır, həm də biznes nəticələrini yaxşılaşdırır.
