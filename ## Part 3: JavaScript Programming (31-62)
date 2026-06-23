@@ -1,0 +1,127 @@
+31. JavaScript nədir və harada icra olunur?
+
+JavaScript veb səhifələri interaktiv və dinamik etmək üçün istifadə olunan yüksək səviyyəli proqramlaşdırma dilidir. O, forma yoxlamaları, şəkil slayderləri və açılan menyular kimi funksiyaları idarə edir. Əsasən istifadəçinin brauzerində (client-side) icra olunur. Lakin Node.js kimi texnologiyalar vasitəsilə server tərəfində də işləyə bilər. JavaScript hadisə dövrü (event loop) sistemi ilə işləyən tək axınlı (single-threaded) mühərrikə malikdir. HTML və CSS ilə birlikdə vebin üç əsas texnologiyasından biridir.
+
+32. let, const və var arasındakı fərqi izah edin.
+
+var dəyişən yaratmağın ən köhnə üsuludur və funksiya səviyyəli əhatə dairəsinə (function scope) malikdir. let daha müasir açar sözdür və blok səviyyəli əhatə dairəsinə (block scope) malikdir. const da blok səviyyəlidir, lakin sabit dəyərlər üçün istifadə olunur. const ilə yaradılmış dəyişənə sonradan yeni dəyər təyin etmək olmaz. let ilə yaradılmış dəyişənlər isə dəyişdirilə bilər. Müasir proqramçılar scope problemlərindən qaçmaq üçün əsasən let və const istifadə edirlər.
+
+33. JavaScript məlumat tipləri hansılardır?
+
+JavaScript məlumat tipləri primitiv və qeyri-primitiv olmaqla iki qrupa bölünür. Primitiv tiplərə string (mətn), number (ədəd), boolean (doğru/səhv), undefined, null və symbol daxildir. Qeyri-primitiv tiplərə isə object, array və function daxildir. Primitiv tiplər yalnız bir dəyər saxlayır, qeyri-primitiv tiplər isə bir neçə dəyər saxlaya bilir. JavaScript dinamik tipli dildir, yəni dəyişənlər proqram zamanı tip dəyişə bilər.
+
+34. JavaScript-də tip çevrilməsini (type conversion) izah edin.
+
+Tip çevrilməsi bir məlumat tipinin digərinə dəyişdirilməsi prosesidir. Avtomatik çevrilmə (implicit conversion) JavaScript tərəfindən özü həyata keçirilir və buna type coercion deyilir. Məsələn, ədədin mətnlə toplanması zamanı baş verir. Açıq çevrilmə (explicit conversion) isə proqramçının özü tərəfindən edilir. Məsələn, Number() funksiyası mətni ədədə çevirir. Hər iki çevrilmə növünü başa düşmək gözlənilməz səhvlərin qarşısını almağa kömək edir.
+
+35. == və === arasındakı fərq nədir?
+
+== operatoru zəif bərabərlik (loose equality) operatorudur. O, müqayisə etməzdən əvvəl dəyərləri eyni tipə çevirməyə çalışır. === operatoru isə ciddi bərabərlik (strict equality) operatorudur. Bu operator həm dəyəri, həm də məlumat tipini müqayisə edir və heç bir çevrilmə aparmır. Məsələn, 5 == "5" nəticəsi true, lakin 5 === "5" nəticəsi false olur. Gözlənilməz məntiqi səhvlərin qarşısını almaq üçün === istifadə etmək tövsiyə olunur.
+
+36. JavaScript-də məntiqi operatorları izah edin.
+
+Məntiqi operatorlar bir neçə şərti birləşdirmək üçün istifadə olunur. && (AND) operatoru yalnız bütün şərtlər doğru olduqda true qaytarır. || (OR) operatoru ən azı bir şərt doğru olduqda true qaytarır. ! (NOT) operatoru isə məntiqi dəyəri əksinə çevirir. Bu operatorlar proqram axınını idarə etmək üçün şərt bloklarında geniş istifadə olunur.
+
+37. Şərt operatorları (conditional statements) nədir?
+
+Şərt operatorları fərqli vəziyyətlərdə fərqli əməliyyatların yerinə yetirilməsi üçün istifadə olunur. Onlar müəyyən şərtin doğru olub-olmamasına əsasən kodun icra olunmasına qərar verir. Ən geniş istifadə olunan şərt operatoru if...else strukturudur. Bir neçə şərti yoxlamaq üçün else if və ya switch operatorlarından istifadə edilir. Bu operatorlar proqramlara qərar vermə qabiliyyəti qazandırır.
+
+38. JavaScript-də dövrlərin (loops) məqsədi nədir?
+
+Dövrlər eyni kod blokunu dəfələrlə təkrarlamaq üçün istifadə olunur. Onlar proqramçını eyni kodu təkrar-təkrar yazmaqdan xilas edir. Dövr müəyyən dayandırma şərti false olana qədər davam edir. Dövrlər massivlərdəki məlumatları emal etmək və ya böyük məlumat siyahıları üzərində işləmək üçün çox faydalıdır. Onlar demək olar ki, bütün proqramlaşdırma dillərinin əsas anlayışlarından biridir.
+
+39. for, while və do...while dövrlərini müqayisə edin.
+
+for dövrü təkrarlanma sayının əvvəlcədən məlum olduğu hallarda istifadə edilir. while dövrü şərt doğru olduğu müddətdə işləyir və şərti əvvəlcə yoxlayır. do...while dövrü isə kod blokunu ən azı bir dəfə icra edir, çünki şərt sonda yoxlanılır. for dövründə sayğacın yaradılması, şərt və artırılma bir sətirdə yazılır. Hansı dövrün seçilməsi konkret məntiqdən və məlumat strukturundan asılıdır.
+
+40. JavaScript-də funksiyalar nədir?
+
+Funksiyalar müəyyən tapşırığı yerinə yetirmək üçün yaradılmış təkrar istifadə oluna bilən kod bloklarıdır. Onlar yalnız çağırıldıqda (invoke edildikdə) icra olunurlar. Funksiyalar böyük proqramları daha kiçik və təşkil olunmuş hissələrə bölməyə kömək edir. Bu, kod təkrarını azaldır və layihənin saxlanılmasını asanlaşdırır. Funksiyalar giriş məlumatı qəbul edib nəticə qaytara bilirlər. Onlar modul JavaScript tətbiqlərinin əsas quruluş elementləridir.
+
+41. Scope (əhatə dairəsi) anlayışını izah edin.
+
+Scope dəyişənlərin proqramın hansı hissələrində əlçatan olduğunu müəyyən edir. Başqa sözlə, dəyişənin harada istifadə oluna biləcəyini göstərir. JavaScript-də üç əsas scope növü var: global scope, function scope və block scope. Global dəyişənlər proqramın hər yerindən istifadə oluna bilər, block dəyişənləri isə yalnız { } mötərizələri daxilində mövcuddur. Scope-u başa düşmək dəyişənlərin təsadüfən bir-birinin məlumatını dəyişməsinin qarşısını alır. Həmçinin, funksiya bitdikdə lokal dəyişənlərin yaddaşdan silinməsinə kömək edir.
+
+42. Lokal və qlobal dəyişənlər arasındakı fərq nədir?
+
+Qlobal dəyişənlər hər hansı funksiya və ya blokdan kənarda elan edilir. Onlara JavaScript faylının istənilən yerindən müraciət etmək və onları dəyişmək mümkündür. Lokal dəyişənlər isə müəyyən bir funksiya və ya blok daxilində elan edilir. Onlardan yalnız həmin sahənin daxilində istifadə etmək olar. Qlobal dəyişənlər brauzer pəncərəsi açıq olduğu müddətdə yaddaşda qalır. Lokal dəyişənlər isə funksiya başa çatdıqdan sonra avtomatik olaraq silinir.
+
+43. Arrow funksiyalar nədir?
+
+Arrow funksiyalar JavaScript-də funksiya yazmağın daha qısa və müasir üsuludur. Onlar ES6 yenilənməsi ilə təqdim olunub və => sintaksisindən istifadə edir. Arrow funksiyaların öz this açar sözü olmur, buna görə callback funksiyalarında çox faydalıdırlar. Əgər funksiya yalnız bir sətirdən ibarətdirsə, return sözünü yazmaya da bilərsiniz. Onlar kodu daha təmiz və qısa edir. React və Vue kimi müasir framework-lərdə geniş istifadə olunur.
+
+44. Funksiya parametrləri və qaytarılan dəyərləri (return values) izah edin.
+
+Funksiya parametrləri funksiyanın daxilində giriş məlumatlarını qəbul edən dəyişənlərdir. Funksiyanı çağırarkən həmin parametrlərə real dəyərlər göndərilir və bunlara arqumentlər deyilir. Qaytarılan dəyər (return value) funksiyanın hesablayıb geri göndərdiyi nəticədir. Funksiya return ifadəsinə çatdıqda dərhal işini dayandırır. Əgər funksiyada return yoxdursa, o avtomatik olaraq undefined qaytarır. Bu mexanizm funksiyaların giriş məlumatlarını emal edib nəticə verməsinə imkan yaradır.
+
+45. JavaScript-də massivlər (arrays) nədir?
+
+Massiv bir neçə dəyəri birlikdə saxlaya bilən xüsusi dəyişən növüdür. O, məlumatları sıralanmış siyahı şəklində saxlayır və hər elementin öz indeks nömrəsi olur. İndekslər həmişə 0-dan başlayır. Massiv daxilində mətn, ədəd və hətta obyektlər kimi müxtəlif məlumat tipləri saxlanıla bilər. Massivlər istifadəçi adları kimi əlaqəli məlumat kolleksiyalarını idarə etmək üçün çox faydalıdır. Massivin uzunluğunu .length xüsusiyyəti ilə öyrənmək mümkündür.
+
+46. Ən çox istifadə olunan massiv metodlarını izah edin.
+
+Massiv metodları məlumat siyahıları üzərində əməliyyat aparmaq üçün istifadə olunan daxili funksiyalardır. push() metodu massivin sonuna yeni element əlavə edir. pop() isə son elementi silir. shift() və unshift() metodları massivin əvvəlində işləyir: biri silir, digəri əlavə edir. splice() metodu isə istənilən mövqedə element əlavə etməyə və ya silməyə imkan verir. Bu metodlar massivlərlə işləməyi daha sürətli və rahat edir.
+
+47. JavaScript obyektləri nədir?
+
+Obyekt açar-dəyər (key-value) cütləri şəklində məlumat saxlayan xüsusi məlumat strukturudur. Massivlərdən fərqli olaraq obyektlər elementlərə indekslə deyil, açar adları vasitəsilə müraciət edir. Açar mətn şəklində olur, dəyər isə istənilən tipdə ola bilər. Obyekt daxilində funksiyalar da saxlanıla bilər və bunlara metod deyilir. Obyektlər real həyatda mövcud olan varlıqları, məsələn istifadəçi hesabını və ya məhsulu təsvir etmək üçün istifadə olunur. Xüsusiyyətlərə nöqtə (.) və ya kvadrat mötərizə ([]) sintaksisi ilə müraciət etmək mümkündür.
+
+48. Massivlərlə obyektlər arasındakı fərqi izah edin.
+
+Massivlər əsasən oxşar elementlərin sıralanmış siyahısını saxlamaq üçün istifadə olunur. Onlarda elementlərə indeks nömrələri vasitəsilə müraciət edilir. Obyektlər isə bir obyektin xüsusiyyətlərini təsvir etmək üçün istifadə olunur və elementlərə açar adları ilə müraciət edilir. Əgər elementlərin sırası vacibdirsə, massivdən istifadə etmək daha məqsədəuyğundur. Əgər müəyyən bir varlığı xüsusiyyətləri ilə birlikdə təsvir etmək lazımdırsa, obyekt daha uyğun seçimdir.
+
+49. JSON nədir və niyə istifadə olunur?
+
+JSON (JavaScript Object Notation) məlumatların saxlanılması və ötürülməsi üçün istifadə olunan standart formatdır. Bu format yüngüldür və insanlar tərəfindən asan oxunur. Kompüterlər JSON məlumatlarını çox sürətlə emal edə bilir. Veb tətbiqlərində JSON əsasən server ilə brauzer arasında məlumat mübadiləsi üçün istifadə olunur. O, proqramlaşdırma dillərindən asılı deyil və bir çox dillər tərəfindən dəstəklənir.
+
+50. JavaScript-də hadisələrin idarə olunması (event handling) nədir?
+
+Hadisələrin idarə olunması istifadəçinin səhifədə etdiyi hərəkətlərə cavab vermə prosesidir. Bu hərəkətlərə siçan klikləri, klaviatura düymələrinin basılması və səhifənin sürüşdürülməsi daxildir. Hadisə baş verdikdə, brauzer bunu aşkar edir və JavaScript mühərrikinə xəbər verir. Daha sonra JavaScript həmin hadisəyə uyğun kod blokunu işə salır. Bu mexanizm sayəsində veb saytlar statik deyil, interaktiv olur. Müasir istifadəçi interfeyslərinin əsasını hadisələrin idarə olunması təşkil edir.
+
+51. Event Listener nədir?
+
+Event Listener brauzerdə müəyyən hadisəni gözləyən daxili funksiyadır. O, JavaScript-də addEventListener() metodu vasitəsilə HTML elementinə əlavə olunur. Bu metod əsasən iki arqument qəbul edir: hadisənin növü (məsələn, "click") və həmin hadisə baş verdikdə işləyəcək funksiya. Məsələn, düyməyə klik edildikdə müəyyən kodun işləməsini təmin etmək olar. Event Listener arxa planda gözləyir və istifadəçi həmin əməliyyatı etdikdə aktivləşir. Lazım olduqda removeEventListener() metodu ilə silinə də bilər.
+
+52. Event Bubbling-i izah edin.
+
+Event Bubbling hadisənin uşaq elementdən valideyn elementə doğru hərəkət etməsi prosesidir. Hadisə əvvəlcə baş verdiyi elementdə işləyir, sonra isə yuxarıdakı valideyn elementlərə ötürülür. Bu proses sənədin (document) kökünə qədər davam edə bilər. Bu, suda yuxarı qalxan köpüyə bənzəyir. Bəzən bu davranışı dayandırmaq lazım olur və bunun üçün event.stopPropagation() metodundan istifadə edilir.
+
+53. DOM manipulyasiyası nədir?
+
+DOM manipulyasiyası JavaScript vasitəsilə veb səhifəni dinamik olaraq dəyişdirmək prosesidir. Bu üsulla yeni mətn əlavə etmək, elementləri silmək və ya CSS xüsusiyyətlərini dəyişdirmək mümkündür. Əvvəlcə elementlər document.getElementById() və ya querySelector() kimi metodlarla seçilir. Daha sonra onların məzmunu, atributları və ya strukturu dəyişdirilir. Bu dəyişikliklər səhifə yenilənmədən birbaşa brauzerdə həyata keçirilir. DOM manipulyasiyası qaranlıq rejim (dark mode), menyular və digər interaktiv funksiyalar üçün vacibdir.
+
+54. innerHTML və textContent arasındakı fərq nədir?
+
+innerHTML xüsusiyyəti elementin daxilindəki HTML məzmununu oxumağa və ya dəyişməyə imkan verir. O, HTML teqlərini həqiqi HTML kimi qəbul edir və emal edir. textContent isə yalnız sadə mətnlə işləyir və HTML teqlərini mətn kimi qəbul edir. textContent daha təhlükəsizdir, çünki XSS (Cross-Site Scripting) hücumlarının qarşısını almağa kömək edir. Yalnız yeni HTML elementləri əlavə etmək lazım olduqda innerHTML istifadə edilməlidir.
+
+55. Form Validation nədir?
+
+Form Validation istifadəçinin daxil etdiyi məlumatların müəyyən qaydalara uyğun olub-olmadığını yoxlama prosesidir. Məsələn, e-poçt ünvanının düzgün yazılıb-yazılmadığını və ya məcburi sahələrin boş qalıb-qalmadığını yoxlayır. Bu proses səhv və ya natamam məlumatların serverə göndərilməsinin qarşısını alır. İstifadəçilərə dərhal səhv mesajları göstərərək məlumatı düzəltməyə imkan verir. Bu, həm təhlükəsizlik, həm də istifadəçi təcrübəsi baxımından çox vacibdir.
+
+56. Client-side və Server-side Validation arasındakı fərqi izah edin.
+
+Client-side Validation istifadəçinin brauzerində, məlumat serverə göndərilməzdən əvvəl həyata keçirilir. Bu üsul istifadəçiyə səhvləri dərhal göstərir və daha sürətli təcrübə yaradır. Server-side Validation isə məlumat serverə çatdıqdan sonra həyata keçirilir. Təhlükəsizlik baxımından server tərəfli yoxlama mütləq vacibdir, çünki client-side yoxlamalar asanlıqla keçilə bilər. Təcrübəli proqramçılar maksimum təhlükəsizlik üçün hər iki üsuldan birlikdə istifadə edirlər.
+
+57. localStorage nədir?
+
+localStorage brauzerdə məlumatları daimi şəkildə saxlamağa imkan verən veb yaddaş texnologiyasıdır. Burada saxlanılan məlumatın son istifadə tarixi yoxdur və brauzer bağlandıqdan sonra da qalır. Hətta kompüter yenidən başladıldıqda belə məlumat silinmir. localStorage təxminən 5 MB həcmində məlumat saxlaya bilir və yalnız mətn tipində məlumat saxlayır. Məsələn, istifadəçinin seçdiyi qaranlıq rejim ayarlarını saxlamaq üçün istifadə olunur. setItem() və getItem() metodları vasitəsilə idarə edilir.
+
+58. sessionStorage nədir?
+
+sessionStorage localStorage-a bənzər yaddaş mexanizmidir, lakin əsas fərqi məlumatın ömrü ilə bağlıdır. Məlumat yalnız cari brauzer nişanı (tab) açıq olduğu müddətdə saxlanılır. Həmin nişan bağlandıqda bütün məlumat silinir. Bu xüsusiyyət çoxmərhələli formaların müvəqqəti məlumatlarını saxlamaq üçün əlverişlidir. sessionStorage müxtəlif brauzer nişanları arasında paylaşılmır.
+
+59. Asinxron proqramlaşdırma nədir?
+
+Asinxron proqramlaşdırma proqramın uzun müddət davam edən tapşırıqları yerinə yetirərkən digər işləri də davam etdirməsinə imkan verir. Beləliklə, proqram ağır əməliyyatın bitməsini gözləyərkən donmur. Bu xüsusiyyət xüsusilə xarici serverlərdən məlumat yükləyərkən çox faydalıdır. Asinxron proqramlaşdırma sayəsində istifadəçi interfeysi həmişə sürətli və cavab verən vəziyyətdə qalır. JavaScript bu davranışı callbacks, Promises və async/await vasitəsilə həyata keçirir.
+
+60. JavaScript-də Callback nədir?
+
+Callback başqa bir funksiyaya arqument kimi ötürülən adi funksiyadır. Əsas funksiya öz işini bitirdikdən sonra callback funksiyasını işə salır. Keçmişdə asinxron əməliyyatları idarə etmək üçün ən çox istifadə olunan üsul idi. Lakin çoxlu callback-lərin iç-içə yazılması "callback hell" adlı problem yaradır və kodun oxunmasını çətinləşdirir. Müasir JavaScript-də bunun əvəzinə əsasən Promises və async/await istifadə olunur.
+
+61. Promise nədir?
+
+Promise JavaScript-də asinxron əməliyyatın gələcəkdə tamamlanacağını və ya uğursuz olacağını təmsil edən obyektdir. O, gələcəkdə müəyyən bir nəticənin əldə olunacağına dair bir "söz" kimidir. Promise üç vəziyyətdən birində ola bilər: pending (gözləmədə), fulfilled (uğurla tamamlanmış) və rejected (uğursuz olmuş). Əvvəlcə Promise pending vəziyyətində olur, daha sonra əməliyyatın nəticəsinə əsasən digər vəziyyətlərdən birinə keçir. Uğurlu nəticələri idarə etmək üçün .then() metodundan istifadə olunur. Xətaları idarə etmək üçün isə .catch() metodundan istifadə edilir.
+
+62. async/await sintaksisini izah edin.
+
+async/await asinxron JavaScript kodunu daha sadə və oxunaqlı yazmaq üçün istifadə olunan müasir sintaksisdir. async açar sözü funksiyanın Promise qaytaracağını göstərir. await isə müəyyən bir Promise tamamlanana qədər kodun icrasını müvəqqəti dayandırır. Bu sintaksis köhnə .then() və .catch() zəncirlərini daha aydın və səliqəli kodla əvəz edir. Nəticədə asinxron kod adi sinxron kod kimi görünür və oxunması asanlaşır. Təhlükəsizlik məqsədilə await ifadələri adətən try...catch blokları daxilində istifadə olunur.
